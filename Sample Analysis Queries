@@ -1,0 +1,19 @@
+1. Top 3 cancer areas by HPV 16/18 attribution;
+SELECT cancer_area, hpv_16_18_attributable
+FROM hpv_cancer_stats
+ORDER BY hpv_16_18_attributable DESC
+LIMIT 3;
+
+2. Age group with the highest HPV prevalence;
+SELECT age_range, prevalence_percent
+FROM hpv_prevalence_by_age
+ORDER BY prevalence_percent DESC
+LIMIT 1;
+
+3. Compare total HPV-attributable cases vs. 16/18 attribution;
+SELECT 
+    SUM(hpv_attributable) AS total_hpv_cases,
+    SUM(hpv_16_18_attributable) AS total_16_18_cases,
+    ROUND(SUM(hpv_16_18_attributable)/SUM(hpv_attributable)*100, 2) AS percent_16_18
+FROM hpv_cancer_stats
+WHERE cancer_area != 'Total';
