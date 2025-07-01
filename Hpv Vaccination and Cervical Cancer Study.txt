@@ -1,0 +1,39 @@
+CREATE TABLE hpv_cancer_stats (
+    cancer_area VARCHAR(50),
+    avg_annual_cases INT,
+    hpv_attributable INT,
+    hpv_16_18_attributable INT
+);
+
+INSERT INTO hpv_cancer_stats (cancer_area, avg_annual_cases, hpv_attributable, hpv_16_18_attributable) VALUES
+('Cervix', 11771, 10700, 7800),
+('Oropharynx (men)', 12638, 9100, 8000),
+('Oropharynx (women)', 3100, 2000, 1600),
+('Vulva', 3554, 2400, 1700),
+('Anus (women)', 3260, 3000, 2600),
+('Anus (men)', 1750, 1600, 1400),
+('Penis', 1168, 700, 600),
+('Vagina', 802, 600, 400),
+('Rectum (women)', 513, 500, 400),
+('Rectum (men)', 237, 200, 200),
+('Total', 38793, 30700, 24600);
+
+
+
+CREATE TABLE HPV_prevalence_among_women 
+(age_range VARCHAR(20), 
+prevalence_percent decimal(5,2));
+
+INSERT INTO hpv_prevalence_by_age (age_range, prevalence_percent) VALUES
+('14 to 19', 24.50),
+('20 to 24', 44.88),
+('25 to 29', 27.40),
+('30 to 39', 27.50),
+('40 to 49', 25.20),
+('50 to 59', 19.60);
+
+
+Example query;
+SELECT * FROM hpv_prevalence_by_age ORDER BY prevalence_percent DESC;
+
+
