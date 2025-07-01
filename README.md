@@ -1,4 +1,4 @@
-# HPV_analysis_project(https://www.kaggle.com/datasets/shuvokumarbasak2030/hpv-vaccination-and-cervical-cancer)
+# HPV_analysis_project
 
 This project explores publicly available data on HPV-attributable cancer cases and prevalence by age. Using MySQL and phpMyAdmin, I cleaned and structured the data, wrote analysis queries, and created visualizations to uncover key trends.
 
