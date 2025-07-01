@@ -30,10 +30,6 @@ INSERT INTO hpv_prevalence_by_age (age_range, prevalence_percent) VALUES
 ('25 to 29', 27.40),
 ('30 to 39', 27.50),
 ('40 to 49', 25.20),
-('50 to 59', 19.60);
-
-
-Example query;
-SELECT * FROM hpv_prevalence_by_age ORDER BY prevalence_percent DESC;
+('50 to 59', 19.60),
 
 
