@@ -17,3 +17,10 @@ This project explores publicly available data on HPV-attributable cancer cases a
 - What are the top 3 cancer types with the highest HPV 16/18 attribution?
 - What age group has the highest HPV prevalence?
 - How does prevalence change over time?
+
+## 🧭 Project Workflow (Start to Finish)
+
+1. **SQL_syntax_codes.sql** – Created database tables and inserted raw data
+2. **Sample_analysis_queries.sql** – Wrote SQL queries to explore and analyze the data
+3. **charts/bar_line_pie.visualization** – Exported results and built visualizations from query results
+4. **summary_findings.txt** – Summarized key insights for non-technical audiences
